@@ -60,11 +60,21 @@
                 </a>
             </div>
         </section>
-<section class="support" id="support">
-  <h3>💖 Support Us</h3>
-  <p>If these notes helped, scan to donate, it will help us to improve</p>
-  <img src="images/QR.png" alt="UPI QR Code" class="support-qr">
-</section>
+<!-- Floating QR Button -->
+<div class="floating-qr-btn" onclick="toggleQRPopup()">
+  💸
+</div>
+
+<!-- QR Popup -->
+<div class="qr-popup" id="qrPopup">
+  <div class="qr-box">
+    <span class="close-btn" onclick="toggleQRPopup()">×</span>
+    <h4>Support Us</h4>
+    <p>Scan to donate via UPI</p>
+    <img src="images/QR.png" alt="Donate QR Code">
+  </div>
+</div>
+
 
 
     </main>

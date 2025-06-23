@@ -136,6 +136,16 @@
             color: #e74c3c;
         }
 
+.support {
+  text-align: center;
+  margin: 2rem 0;
+}
+.support-qr {
+  width: 150px;
+  margin: 1rem auto;
+}
+
+
         /* Footer */
         footer {
             background: #2c3e50;

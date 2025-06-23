@@ -136,20 +136,63 @@
             color: #e74c3c;
         }
 
-<!-- Floating QR Button -->
-<div class="floating-qr-btn" onclick="toggleQRPopup()">
-  💸
-</div>
+/* Floating QR Button */
+.floating-qr-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1e40af;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: background 0.3s;
+}
+.floating-qr-btn:hover {
+  background: #3749c2;
+}
 
-<!-- QR Popup -->
-<div class="qr-popup" id="qrPopup">
-  <div class="qr-box">
-    <span class="close-btn" onclick="toggleQRPopup()">×</span>
-    <h4>Support Us</h4>
-    <p>Scan to donate via UPI</p>
-    <img src="images/QR.png" alt="Donate QR Code">
-  </div>
-</div>
+/* QR Popup Box */
+.qr-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  width: 220px;
+  text-align: center;
+}
+
+.qr-popup img {
+  width: 160px;
+  margin-top: 0.5rem;
+}
+
+.qr-box h4 {
+  margin-bottom: 0.25rem;
+  color: #1e40af;
+}
+.qr-box p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #888;
+}
+
 
 
 
